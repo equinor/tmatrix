@@ -1,7 +1,14 @@
-Installation instructions
-=========================
+[![PyPI version](https://badge.fury.io/py/tmatrix.svg)](https://badge.fury.io/py/tmatrix)
 
-The T-matrix project is build with CMake. 
+Installation
+------------
+
+For most users, installing from PyPI is the preferred way:
+```
+pip install tmatrix
+```
+
+For developers, the project can be compiled with `cmake`: 
 
 ```
 cd tmatrix
@@ -10,8 +17,8 @@ cmake ..
 make
 ```
 
-All objects are placed in the build subdirectory. If CMake detects a
-Matlab installation the tmatrix_porosity_mex.X wrapper is also
+All objects are placed in the build subdirectory. If `cmake` detects a
+MATLAB installation, the `tmatrix_porosity_mex.X` wrapper is also
 built. The interface exposed to MATLAB is analogeous to the original
 <T_matrix_porosity.m> function.
 
@@ -26,7 +33,6 @@ tmatrix_porosity_mex(mineral_property, ... )
 Note that enabling parallel processing incurs some overhead, and should only be
 enabled for large jobs (e.g. 10.000+ sequential calls).
 
-## Windows build ##
 Under Windows use, find your desired Windows CMake [generator](https://cmake.org/cmake/help/v3.4/manual/cmake-generators.7.html#visual-studio-generators), ie:
 ```
 cd tmatrix
