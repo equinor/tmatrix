@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools>=75.1.0",
+    "scikit-build-core[pyproject]",
+    "cmake>=3.18",
+    "ninja",
+    "conan",
+    "pybind11"
+]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+cmake.version = "CMakeLists.txt"
+build.verbose = true
+cmake.args = ["-DCMAKE_BUILD_TYPE=Release", "-DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake"]
+metadata.version.provider = "scikit_build_core.metadata.setuptools_scm"
+sdist.include = ["src/tmatrix/version.py"]
+wheel.install-dir = "tmatrix"
+
+[tool.setuptools_scm]
+write_to = "src/tmatrix/version.py"
+
+[project]
+name = "tmatrix"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["version"]
