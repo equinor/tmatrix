@@ -1,0 +1,37 @@
+% TMATRIX_POROSITY_MEX compute the T-Matrix response.
+%    The T-matrix can either be computed using predefined scenarios or with
+%    free parameters.
+%
+%    T = TMATRIX_POROSITY_MEX(MINERAL_PROPERTIES, FLUID_PROPERTIES,
+%    POROSITY, SCENARIO, FREQUENCY, ANGLE, PER_INC_CON, PER_INC_ANI), where
+%    MINERAL_PROPERTIES is an N by 3 array with its columns containing
+%       the bulk modulus, the shear modulus and solid density as its
+%       columns,
+%    FLUID_PROPERTIES is an N by 4 array with its column containing fluid
+%       bulk modulus, fluid density, rock permeability and fluid viscocity,
+%    POROSITY is an N by 1 array containing the rock porosity,
+%    SCENARIO a number between 1 and 4 indicating one of the following
+%       scenarios:
+%    (1): dual porosity, mostly rounded pores
+%    (2): dual porosity, little rounded pores
+%    (3): mixed pores,
+%    (4): flat pores and cracks,
+%    FREQUENCY a scalar containing the source frequency,
+%    ANGLE a scalar the angle between the wave vector and the axis of symmetry,
+%    PER_INC_CON a scalar containing the connectivity fraction and,
+%    PER_INC_ANI a scalar containing the anisotropy fraction.
+%
+%    T = TMATRIX_POROSITY_MEX(MINERAL_PROPERTIES, FLUID_PROPERTIES,
+%    POROSITY, ALPHA, V, FREQUENCY, ANGLE, PER_INC_CON, PER_INC_ANI), where
+%    ALPHA is the aspect ratios of all the inclusions, and
+%    V is the volume fraction of all the inclusions,
+%    allows for variable ALPHA, V, PER_INC_CON and PER_INC_ANI. They can
+%    either be all constant, or ALPHA and V the same length as the other
+%    arrays and PER_INC_CON, PER_INC_ANI constant, or all four parameters
+%    the same length as the other arrays.
+%
+%    The function returns a structure array with corresponding p-velocity
+%    (Vp), s-velocities (Vsv and Vsh) , input frequency (frequency and the
+%    effective density (rho_eff).
+%
+%    MEX File function

@@ -1,0 +1,44 @@
+﻿BasedOnStyle: google
+AccessModifierOffset: -2
+IndentWidth: 4
+Language: Cpp
+ColumnLimit: 80
+# Force pointers to the type for C++.
+DerivePointerAlignment: false
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterClass: false
+    AfterControlStatement: false
+    AfterEnum: true
+    AfterFunction: true
+    AfterNamespace: false
+    AfterStruct: true
+    AfterUnion: true
+    BeforeCatch: false
+    BeforeElse: false
+    IndentBraces: false
+PointerBindsToType: false
+PointerAlignment: Left
+NamespaceIndentation: None
+Standard: Cpp11
+UseTab: Never
+IncludeCategories:
+# Header include sorting order
+# (regexes are sorted, first match is used)
+# outline:
+# always let mex go on top (1)
+# local includes (2) anything in quotes
+# "installed" includes (Eigen, boost etc.) (3)  starts with '<' and has '/'
+# standard includes (4)
+# "local" includes
+  - Regex:           '^("|<)mex\.h'
+    Priority:        1
+# assumes local includes are quoted
+  - Regex:           '^"'
+    Priority:        2
+# anything start with '<' and has '/'
+  - Regex:           '<[^\/]*\/'
+    Priority:        3
+# global includes (no slashes)
+  - Regex:           '^<'
+    Priority:        4
