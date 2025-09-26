@@ -1,0 +1,16 @@
+name: push to main branch
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  release-please:
+    uses: ./.github/workflows/release-please.yml
+    permissions:
+      contents: write
+      pull-requests: write
