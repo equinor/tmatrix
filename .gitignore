@@ -89,6 +89,13 @@ octave-workspace
 
 # End of https://www.gitignore.io/api/c++,linux,cmake,matlab
 
+.venv
 /venv/
+dist
 .idea
 **/version.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class

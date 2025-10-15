@@ -29,3 +29,11 @@ readme = "README.md"
 description = "Seismic properties and pore structure of carbonate rocks"
 requires-python = ">=3.11"
 version = "1.0.0"
+dependencies = ["numpy>=1.26.4"]
+
+[dependency-groups]
+dev = ["pytest>=8.4.2"]
+
+[tool.pytest.ini_options]
+addopts = ["--color=yes", "-vv"]
+testpaths = ["tests"]
