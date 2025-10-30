@@ -28,7 +28,7 @@ name = "tmatrix"
 readme = "README.md"
 description = "Seismic properties and pore structure of carbonate rocks"
 requires-python = ">=3.11"
-version = "1.0.0"
+dynamic = ["version"]
 dependencies = ["numpy>=1.26.4"]
 
 [dependency-groups]
