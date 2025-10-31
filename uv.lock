@@ -146,7 +146,6 @@ wheels = [
 
 [[package]]
 name = "tmatrix"
-version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "numpy" },
