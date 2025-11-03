@@ -1,16 +1,19 @@
+# tmatrix
+
+[![SCM Compliance](https://scm-compliance-api.radix.equinor.com/repos/equinor/tmatrix/badge)](https://developer.equinor.com/governance/scm-policy/)
 [![PyPI version](https://badge.fury.io/py/tmatrix.svg)](https://badge.fury.io/py/tmatrix)
 
-Installation
-------------
+## Installation
 
 For most users, installing from PyPI is the preferred way:
-```
+
+```bash
 pip install tmatrix
 ```
 
-For developers, the project can be compiled with `cmake`: 
+For developers, the project can be compiled with `cmake`:
 
-```
+```bash
 cd tmatrix
 mkdir build && cd build
 cmake ..
@@ -19,13 +22,13 @@ make
 
 All objects are placed in the build subdirectory. If `cmake` detects a
 MATLAB installation, the `tmatrix_porosity_mex.X` wrapper is also
-built. The interface exposed to MATLAB is analogeous to the original
+built. The interface exposed to MATLAB is analogous to the original
 <T_matrix_porosity.m> function.
 
 To use this mex-file in MATLAB simply add the dynamic library to the
 matlab path and call it like you would the original script:
 
-```
+```bash
 addpath path/to/build/
 tmatrix_porosity_mex(mineral_property, ... )
 ```
@@ -34,7 +37,8 @@ Note that enabling parallel processing incurs some overhead, and should only be
 enabled for large jobs (e.g. 10.000+ sequential calls).
 
 Under Windows use, find your desired Windows CMake [generator](https://cmake.org/cmake/help/v3.4/manual/cmake-generators.7.html#visual-studio-generators), ie:
-```
+
+```bash
 cd tmatrix
 mkdir build
 cd build
@@ -42,11 +46,10 @@ cmake .. -G "Visual Studio 14 2015 Win64"
 cmake --build . --target ALL_BUILD --config Release
 ```
 
-
-Literature
-----------
+## Literature
 
 The theory can be found in the papers and in the references therein:
+
 1. Agersborg, R., Jakobsen, M., Ruud, B.O. and Johansen, T. A. 2007.
 Effects of pore fluid pressure on the seismic response of a fractured carbonate reservoir.
 Stud. Geophys. Geod., 51, 89-118.
