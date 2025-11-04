@@ -20,18 +20,7 @@ cmake ..
 make
 ```
 
-All objects are placed in the build subdirectory. If `cmake` detects a
-MATLAB installation, the `tmatrix_porosity_mex.X` wrapper is also
-built. The interface exposed to MATLAB is analogous to the original
-<T_matrix_porosity.m> function.
-
-To use this mex-file in MATLAB simply add the dynamic library to the
-matlab path and call it like you would the original script:
-
-```bash
-addpath path/to/build/
-tmatrix_porosity_mex(mineral_property, ... )
-```
+All objects are placed in the build subdirectory.
 
 Note that enabling parallel processing incurs some overhead, and should only be
 enabled for large jobs (e.g. 10.000+ sequential calls).
