@@ -1,5 +1,6 @@
 # tmatrix
 
+[![SCM Compliance](https://scm-compliance-api.radix.equinor.com/repos/equinor/tmatrix/badge)](https://developer.equinor.com/governance/scm-policy/)
 [![PyPI version](https://badge.fury.io/py/tmatrix.svg)](https://badge.fury.io/py/tmatrix)
 
 ## Installation
@@ -10,7 +11,7 @@ For most users, installing from PyPI is the preferred way:
 pip install tmatrix
 ```
 
-For developers, the project can be compiled with `cmake`: 
+For developers, the project can be compiled with `cmake`:
 
 ```bash
 cd tmatrix
@@ -34,9 +35,7 @@ cmake .. -G "Visual Studio 14 2015 Win64"
 cmake --build . --target ALL_BUILD --config Release
 ```
 
-
-Literature
-----------
+## Literature
 
 The theory can be found in the papers and in the references therein:
 
