@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/equinor/tmatrix/compare/v1.1.0...v1.1.1) (2025-12-05)
+
+
+### Bug Fixes
+
+* Update SECURITY.MD ([fe42baa](https://github.com/equinor/tmatrix/commit/fe42baa6be03c39d707987b6bd9669db29126057))
+
 ## [1.1.0](https://github.com/equinor/tmatrix/compare/1.0.0...v1.1.0) (2025-12-04)
 
 
