@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/equinor/tmatrix/compare/v1.1.1...v1.1.2) (2025-12-15)
+
+
+### Bug Fixes
+
+* Bump pypa/cibuildwheel from 2.21.1 to 3.3.0 ([ffa6b5e](https://github.com/equinor/tmatrix/commit/ffa6b5ec2e2909f5ca5dfefc546a4b7af0034082))
+
 ## [1.1.1](https://github.com/equinor/tmatrix/compare/v1.1.0...v1.1.1) (2025-12-05)
 
 
