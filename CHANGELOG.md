@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/equinor/tmatrix/compare/v1.1.2...v1.1.3) (2025-12-15)
+
+
+### Bug Fixes
+
+* Drop implicit 3.14 support ([6f61b2f](https://github.com/equinor/tmatrix/commit/6f61b2ffcbe0c81b73908fcf6ea3779aab7a4a2b))
+
 ## [1.1.2](https://github.com/equinor/tmatrix/compare/v1.1.1...v1.1.2) (2025-12-15)
 
 
