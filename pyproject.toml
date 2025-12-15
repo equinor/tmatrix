@@ -27,7 +27,7 @@ write_to = "src/tmatrix/version.py"
 name = "tmatrix"
 readme = "README.md"
 description = "Seismic properties and pore structure of carbonate rocks"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.14"
 dynamic = ["version"]
 dependencies = ["numpy>=1.26.4"]
 
