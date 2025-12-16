@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/equinor/tmatrix/compare/v1.1.3...v1.1.4) (2025-12-16)
+
+
+### Bug Fixes
+
+* Checkout release branch to get correct version ([c3b85d0](https://github.com/equinor/tmatrix/commit/c3b85d0e88216d64f3511302e8b6d0fb0773f7a9))
+
 ## [1.1.3](https://github.com/equinor/tmatrix/compare/v1.1.2...v1.1.3) (2025-12-15)
 
 
