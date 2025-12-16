@@ -6,6 +6,9 @@ on:
       release_created:
         description: "True if previous merged PR was a release"
         value: ${{ jobs.release-please.outputs.release_created }}
+      tag_name:
+        description: "The tag name of the release"
+        value: ${{ jobs.release-please.outputs.tag_name }}
   workflow_dispatch:
 
 permissions:
@@ -25,3 +28,4 @@ jobs:
           manifest-file: .github/release-please-manifest.json
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
