@@ -24,14 +24,14 @@ def tmatrix_porosity(
     dim: int
         Dimension of the output array.
     mineral_property_np: npt.NDArray[np.float64]
-        Contains mineral bulk modulus, shear modulus and density. Shape should be (N, 3).
+        Contains mineral bulk modulus [Pa], shear modulus [Pa] and density [kg/m³]. Shape should be (N, 3).
     fluid_property_np: npt.NDArray[np.float64]
-        Contains fluid bulk modulus and density, viscosity and permeability. Shape should be (N, 4).
+        Contains fluid bulk modulus [Pa] and density [kg/m³], viscosity [cP] and permeability [mD]. Shape should be (N, 4).
     phi_vector_np: npt.NDArray[np.float64]
         Porosity values array. Shape should be (N,).
     in_scenario: Literal[1, 2, 3, 4]
-        1: Dual porosity, mostly rounded
-        2: Dual porosity, little rounded
+        1: Dual porosity, mostly rounded pores
+        2: Dual porosity, little rounded pores
         3: Mixed pores
         4: Flat pores and cracks
     frequency: float
@@ -80,9 +80,9 @@ def tmatrix_porosity_noscenario(
     out_N: int
         Dimension of the output array.
     mineral_property_np: npt.NDArray[np.float64]
-        Contains mineral bulk modulus, shear modulus and density. Shape should be (N, 3).
+        Contains mineral bulk modulus [Pa], shear modulus [Pa] and density [kg/m³]. Shape should be (N, 3).
     fluid_property_np: npt.NDArray[np.float64]
-        Contains fluid bulk modulus and density, viscosity and permeability. Shape should be (N, 4).
+        Contains fluid bulk modulus [Pa] and density [kg/m³], viscosity [cP] and permeability [mD]. Shape should be (N, 4).
     phi_vector_np: npt.NDArray[np.float64]
         Porosity values array. Shape should be (N,) where N is the number of porosity values.
     alpha_np: npt.NDArray[np.float64]
