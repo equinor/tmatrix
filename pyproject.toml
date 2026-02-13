@@ -27,12 +27,15 @@ write_to = "src/tmatrix/version.py"
 name = "tmatrix"
 readme = "README.md"
 description = "Seismic properties and pore structure of carbonate rocks"
-requires-python = ">=3.11,<3.14"
+requires-python = ">=3.11,<3.15"
 dynamic = ["version"]
 dependencies = ["numpy>=1.26.4"]
 
 [dependency-groups]
 dev = ["pytest>=8.4.2"]
+
+[tool.cibuildwheel]
+skip = "cp3*t-*"
 
 [tool.pytest.ini_options]
 addopts = ["--color=yes", "-vv"]
