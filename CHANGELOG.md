@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/equinor/tmatrix/compare/v1.1.5...v1.2.0) (2026-02-16)
+
+
+### Features
+
+* add Python 3.14 support ([ee12c2a](https://github.com/equinor/tmatrix/commit/ee12c2ac119b5e435bbdce175a767a9667c75d87))
+
 ## [1.1.5](https://github.com/equinor/tmatrix/compare/v1.1.4...v1.1.5) (2025-12-30)
 
 
