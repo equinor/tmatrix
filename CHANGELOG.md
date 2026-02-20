@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.1](https://github.com/equinor/tmatrix/compare/v1.2.0...v1.2.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* replace static initializer_list with vector to fix macOS segfault ([6eb75bc](https://github.com/equinor/tmatrix/commit/6eb75bc1dbccaaf38a9a38d66b0622d7c198fc8b))
+
+
+### Documentation
+
+* add copilot coding agent instructions ([764e6fe](https://github.com/equinor/tmatrix/commit/764e6fef087eecc2ff9820b9c42778978b0924ca))
+
 ## [1.2.0](https://github.com/equinor/tmatrix/compare/v1.1.5...v1.2.0) (2026-02-16)
 
 
