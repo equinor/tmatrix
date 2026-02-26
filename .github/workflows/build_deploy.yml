@@ -17,6 +17,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+    secrets: inherit
 
   build:
     needs: release-please
