@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/equinor/tmatrix/compare/v1.2.1...v1.2.2) (2026-03-09)
+
+
+### Bug Fixes
+
+* update dev dependencies and remove numpy from main dependencies ([3d5affd](https://github.com/equinor/tmatrix/commit/3d5affde265c064f48964812725dcdd2915bff6e))
+
 ## [1.2.1](https://github.com/equinor/tmatrix/compare/v1.2.0...v1.2.1) (2026-02-20)
 
 
