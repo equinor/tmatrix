@@ -1,11 +1,22 @@
 version: 2
 updates:
-  - package-ecosystem: "uv"
-    directory: "/"
-    schedule:
-      interval: "monthly"
-
   - package-ecosystem: "github-actions"
     directory: "/"
+    groups:
+      ci:
+        patterns:
+          - "*"
     schedule:
       interval: "monthly"
+    cooldown:
+      default-days: 7
+
+  - package-ecosystem: "uv"
+    directory: "/"
+    groups:
+      dev:
+        dependency-type: "development"
+    schedule:
+      interval: "monthly"
+    cooldown:
+      default-days: 7
